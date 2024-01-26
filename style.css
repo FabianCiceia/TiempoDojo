@@ -109,6 +109,9 @@ margin: 0px 10px;
 /***cookie*****/
 .cookie{
     display: flex;
+    position: fixed;
+    top: 80%;
+    left: 0;
     align-items: center;
     background-color: #EEEEEE;
     border: #000 solid;
@@ -117,6 +120,7 @@ margin: 0px 10px;
 .cookie img {
     width: 70px;
     height: 70px;
+    margin: 10px;
 }
 
 .btn{

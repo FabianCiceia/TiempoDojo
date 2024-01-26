@@ -1,6 +1,6 @@
 
 function alerttemp(){
-    alert("This page says Loading weather report...")
+    alert("Loading weather report...")
 }
 function acceptCookie(){
     var cookie = document.querySelector(".cookie");
