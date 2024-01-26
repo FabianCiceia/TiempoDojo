@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>DojoWeather</title>
+</head>
+<body>
+    <div class='nav'>
+        <h1 class='nav-title'>DojoWeather</h1>
+        <ul class='nav-links'>
+            <li><a href='#' onclick="alerttemp()" >Burbank</a></li>
+            <li><a href='#' onclick="alerttemp()" >Chicago</a></li>
+            <li><a href='#' onclick="alerttemp()" >Dallas</a></li>
+        </ul>
+    </div>
+    <div class="main"   >
+        <div class="main-nav">
+            <h1>San Jose</h1>
+            <div class="main-nav-temp" >
+                <p>show temperature in</p>
+                <select class="main-nav-temp-option" onchange="temp(this.value)" name="unit">
+                    <option value="0">°C</option>
+                    <option value="1">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-day">
+                <h1>Today</h1>
+                <img class="forecast-day-img" src="assets/some_rain.png" alt="">
+                <p>some rain</p>
+                <div class="forecast-day-temp">
+                    <h1 temp="24" class="forecast-day-temp-max">24°</h1>
+                    <h1 temp="18" class="forecast-day-temp-min">18°</h1>
+                </div>
+            </div>
+            <div class="forecast-day">
+                <h1>Tomorrow</h1>
+                <img class="forecast-day-img" src="assets/some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="forecast-day-temp">
+                    <h1 temp="27" class="forecast-day-temp-max">27°</h1>
+                    <h1 temp="19" class="forecast-day-temp-min">19°</h1>
+                </div>
+            </div>
+            <div class="forecast-day">
+                <h1>Friday</h1>
+                <img class="forecast-day-img" src="assets/some_clouds.png" alt="">
+                <p>some clouds</p>
+                <div class="forecast-day-temp">
+                    <h1 temp="21" class="forecast-day-temp-max">21°</h1>
+                    <h1 temp="16" class="forecast-day-temp-min">16°</h1>
+                </div>
+            </div>
+            <div class="forecast-day">
+                <h1>Saturdoy</h1>
+                <img class="forecast-day-img" src="assets/some_sun.png" alt="">
+                <p>some sun</p>
+                <div class="forecast-day-temp">
+                    <h1 temp="26" class="forecast-day-temp-max">26°</h1>
+                    <h1 temp="21" class="forecast-day-temp-min">21°</h1>
+                </div>
+            </div>
+        </div>
+        <div class="cookie" >
+            <img src="assets/cookie.png" alt="">
+            <div>
+                <h1>Stop! Cookie time</h1>
+                <h2>We use cookies (sadly not the edible ones) to personalize content ond ads, to provide social medio features and to analyse our traffic. <a href="">Read more...</a></h2>
+            </div>
+            <button class="btn" onclick="acceptCookie()">I Accept</button>
+        </div>
+    </div>
+</body>
+</html>
